@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package com.example;
+
+option go_package = "example.com/subproj1/moduleB/pb2;pb2";
+
+import "subproj1/moduleA/pb1.proto";
+
+message B {
+  A a = 1;
+}
